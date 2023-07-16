@@ -1,0 +1,15 @@
+.DS_Store
+.vscode
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.toc
+*.md5
+*.auxlock
+*.bbl
+*.bcf
+*.blg
+*.run.xml
