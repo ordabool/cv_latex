@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 %                Identification
 %-------------------------------------------------------------------------------
-\ProvidesClass{russell}[2017/02/05 v1.6.1 russell Curriculum Vitae Class]
+\ProvidesClass{orcv}[Or CV Class]
 \NeedsTeXFormat{LaTeX2e}
 
 
@@ -117,26 +117,26 @@
 \colorlet{graytext}{gray}
 \colorlet{lighttext}{lightgray}
 \colorlet{sectiondivider}{gray}
-% russell colors
-\definecolor{russell-emerald}{HTML}{00A388}
-\definecolor{russell-skyblue}{HTML}{0395DE}
-\definecolor{russell-red}{HTML}{DC3522}
-\definecolor{russell-purple}{HTML}{A32CC4}
-\definecolor{russell-pink}{HTML}{EF4089}
-\definecolor{russell-orange}{HTML}{FF6138}
-\definecolor{russell-nephritis}{HTML}{27AE60}
-\definecolor{russell-concrete}{HTML}{95A5A6}
-\definecolor{russell-darknight}{HTML}{131A28}
-\definecolor{russell-black}{HTML}{000000}
-\colorlet{russell}{russell-red}
+% or colors
+\definecolor{or-emerald}{HTML}{00A388}
+\definecolor{or-skyblue}{HTML}{0395DE}
+\definecolor{or-red}{HTML}{DC3522}
+\definecolor{or-purple}{HTML}{A32CC4}
+\definecolor{or-pink}{HTML}{EF4089}
+\definecolor{or-orange}{HTML}{FF6138}
+\definecolor{or-nephritis}{HTML}{27AE60}
+\definecolor{or-concrete}{HTML}{95A5A6}
+\definecolor{or-darknight}{HTML}{131A28}
+\definecolor{or-black}{HTML}{000000}
+\colorlet{or}{or-red}
 
 % Boolean value to switch section color highlighting
 \newbool{acvSectionColorHighlight}
 \setbool{acvSectionColorHighlight}{true}
 
-% russell section color
+% or section color
 \def\@sectioncolor#1#2#3{%
-  \ifbool{acvSectionColorHighlight}{{\color{russell}#1#2#3}}{#1#2#3}%
+  \ifbool{acvSectionColorHighlight}{{\color{or}#1#2#3}}{#1#2#3}%
 }
 
 
@@ -156,7 +156,7 @@
 % For fundamental structures
 \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{28pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{28pt}{1em}\headerfont\color{text} #1}}
-\newcommand*{\headerpositionstyle}[1]{{\fontsize{10}{1em}\bodyfont\scshape\color{russell} #1}}
+\newcommand*{\headerpositionstyle}[1]{{\fontsize{10}{1em}\bodyfont\scshape\color{or} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{8pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
@@ -169,21 +169,21 @@
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{graytext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{russell} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{or} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 
 % For elements of subentry
 \newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
 \newcommand*{\subentrypositionstyle}[1]{{\fontsize{7pt}{1em}\bodyfont\scshape\color{graytext} #1}}
 \newcommand*{\subentrydatestyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\subentrylocationstyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\slshape\color{russell} #1}}
+\newcommand*{\subentrylocationstyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\slshape\color{or} #1}}
 \newcommand*{\subdescriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 
 % For elements of honor
 \newcommand*{\honortitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
 \newcommand*{\honorpositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\honordatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
-\newcommand*{\honorlocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{russell} #1}}
+\newcommand*{\honorlocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{or} #1}}
 
 % For elements of skill
 \newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
